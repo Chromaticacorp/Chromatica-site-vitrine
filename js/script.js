@@ -53,7 +53,7 @@ function initMenuEvents() {
         if (e.key === "Escape") setMenuOpen(false);
     });
 
-    const inSousites = window.location.pathname.includes('/Sous-sites/');
+    const inSousites = window.location.pathname.includes('/option/');
     const basePath = inSousites ? '..' : '.';
 
     items.forEach((item, index) => {
@@ -61,11 +61,11 @@ function initMenuEvents() {
             if (index === 0) {
                 window.location.href = `${basePath}/Index.html`;
             } else if (index === 1) {
-                window.location.href = `${basePath}/Sous-sites/Who_Is_Chromatica.html`;
+                window.location.href = `${basePath}/option/Who_Is_Chromatica.html`;
             } else if (index === 2) {
-                window.location.href = `${basePath}/Sous-sites/Why_Us.html`;
+                window.location.href = `${basePath}/option/Why_Us.html`;
             } else if (index === 3) {
-                window.location.href = `${basePath}/Sous-sites/Ask_Us_Anything.html`;
+                window.location.href = `${basePath}/option/Ask_Us_Anything.html`;
             }
 
             setMenuOpen(false);
